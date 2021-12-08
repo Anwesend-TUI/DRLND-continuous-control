@@ -6,14 +6,10 @@ The Projects consists of solving Unitys Reacher Environment which is included in
 The version that contains 20 double joint arms in one Unity environment. These arms shall be moved to keep touching a ball. 
 
 ## State and action space look like this
-The Action space contains 
-
-Number of agents: 20
-
-Size of each action: 4
-
-There are 20 agents. Each observes a state with length: 33
-
+The Action space contains  
+Number of agents: 20  
+Size of each action: 4  
+There are 20 agents. Each observes a state with length: 33  
 The state for the first agent looks like: [ 0.00000000e+00 -4.00000000e+00  0.00000000e+00  1.00000000e+00
  -0.00000000e+00 -0.00000000e+00 -4.37113883e-08  0.00000000e+00
   0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00
