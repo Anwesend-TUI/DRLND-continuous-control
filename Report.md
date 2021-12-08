@@ -3,19 +3,19 @@
 ## Deep Deterministic Policy Gradient (DDPG)
 
 ## Parameters
-BUFFER_SIZE = int(1e6)  # replay buffer size
-BATCH_SIZE = 256        # minibatch size
-GAMMA = 0.99            # discount factor
-TAU = 1e-3              # for soft update of target parameters
-LR_ACTOR = 1e-3         # learning rate of the actor 
-LR_CRITIC = 2e-3        # learning rate of the critic
-#LR_ACTOR = 1e-4         # learning rate of the actor 
-#LR_CRITIC = 3e-4        # learning rate of the critic
-WEIGHT_DECAY = 0.00001   # L2 weight decay
-UPDATE_INTERVAL = 20
-LEARN_PASSES=10
-EPSILON=1
-EPSILON_DECAY=1e-6 
+BUFFER_SIZE = int(1e6)  # replay buffer size  
+BATCH_SIZE = 256        # minibatch size  
+GAMMA = 0.99            # discount factor  
+TAU = 1e-3              # for soft update of target parameters  
+LR_ACTOR = 1e-3         # learning rate of the actor   
+LR_CRITIC = 2e-3        # learning rate of the critic  
+#LR_ACTOR = 1e-4         # learning rate of the actor   
+#LR_CRITIC = 3e-4        # learning rate of the critic  
+WEIGHT_DECAY = 0.00001   # L2 weight decay  
+UPDATE_INTERVAL = 20  
+LEARN_PASSES=10  
+EPSILON=1  
+EPSILON_DECAY=1e-6   
 
 Particularly important and with serious implications was the selected seed parameter. Here in my case `seed = 3` lead to good training results, whereas values like e.g. 1, 2 or 541 ... did not. 
 
