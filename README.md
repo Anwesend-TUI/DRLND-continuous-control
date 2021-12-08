@@ -3,8 +3,9 @@ This Repository includes my solution to the Project Continuous control for Udaci
 The following describes the project and how to set up the workspace. The results are described in more detail in `Report.md`.
 
 # Environment and Statespace
-The Projects consists of solving Unitys Reacher Environment which is included in this repository or can be found [here for Windows](https://s3-us-west-1.amazonaws.com/udacity-drlnd/P2/Reacher/Reacher_Windows_x86_64.zip) and [here for Linux](https://s3-us-west-1.amazonaws.com/udacity-drlnd/P2/Reacher/Reacher_Linux.zip) for Linux. 
-The version that contains 20 double joint arms in one Unity environment. These arms shall be moved to keep touching a ball. 
+The Projects consists of solving Unitys Reacher Environment which can be [downloaded here for Windows] (https://s3-us-west-1.amazonaws.com/udacity-drlnd/P2/Reacher/Reacher_Windows_x86_64.zip) and [downloaded here for Linux](https://s3-us-west-1.amazonaws.com/udacity-drlnd/P2/Reacher/Reacher_Linux.zip) for Linux. 
+The Windows Version is also included in this Repository.  
+It is about the version that contains 20 double joint arms (agents) in one Unity environment. These arms shall be moved to keep touching a ball. 
 
 ## Setting up the environment
 For Jupiter workspace: 
