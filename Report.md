@@ -20,11 +20,11 @@ EPSILON_DECAY=1e-6
 
 The higher learning rate for the actor and the ciritic seemed not to affect the results much. Whereas a WEIGHT_DECAY higher than 0.00001 hat a verry negative effect on the training process.  
 The implementation of Epsilon decay to reduce the noise and therefor the probability that a random action is taken later in the training process seemd to be beneficial. 
-A Buffer Size of 10e5 was much to small, whereas choosing the Buffer Size of 10e6 lead to good results, in synergy with the chosen epsilon decay rate.
+A Buffer Size of 10e5 was much to small, whereas choosing the Buffer Size of 10e6 lead to good results, in synergy with the chosen epsilon decay rate.  
 Particularly important and with serious implications was the selected seed parameter. Here in my case `seed = 3` lead to good training results, whereas values like e.g. 1, 2 or 541 ... did not. 
 
 ## Plot of Rewards:
-The Plot showing an average reward over 30 can be found in Continuous_Control.ipynb and here ![Plot of the Results](Training_results.png).  
+The Plot showing an average reward over 30 can be found in Continuous_Control.ipynb and here: ![Plot of the Results](Training_results.png).  
 With Episode 21 the reward was the first time bigger than 30. The following consecutive 100 episodes were also each with rewards >=30. So the training was successfully stopped after episode 121.
 
 # Ideas for Future Work:
