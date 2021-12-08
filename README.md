@@ -28,11 +28,11 @@ python -m ipykernel install --user --name drlnd --display-name "drlnd"
 
 
 Full script:  
-`conda create --name drlnd python=3.6`  
-`source activate drlnd`  
-`cd deep-reinforcement-learning/python`  
-`pip install .`  
-`python -m ipykernel install --user --name drlnd --display-name "drlnd"`
+```conda create --name drlnd python=3.6  
+source activate drlnd  
+cd deep-reinforcement-learning/python  
+pip install .  
+python -m ipykernel install --user --name drlnd --display-name "drlnd"```
 
 ## State and action space look like this
 The Action space contains  
