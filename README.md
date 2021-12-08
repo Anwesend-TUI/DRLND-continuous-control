@@ -2,17 +2,27 @@
 This Repository includes my solution to the Project Continuous control for Udacity's Deep Reinforcement Learning Nanodegree.
 
 # Environment and Statespace
-The Projects consists of solving Unitys Reacher Environment which is included in this repository or can be found [for Windows](https://s3-us-west-1.amazonaws.com/udacity-drlnd/P2/Reacher/Reacher_Windows_x86_64.zip) and here [for Linux](https://s3-us-west-1.amazonaws.com/udacity-drlnd/P2/Reacher/Reacher_Linux.zip) for Linux. 
-"""The README describes the the project environment details (i.e., the state and action spaces, and when the environment is considered solved)."""
-This 
+The Projects consists of solving Unitys Reacher Environment which is included in this repository or can be found [here for Windows](https://s3-us-west-1.amazonaws.com/udacity-drlnd/P2/Reacher/Reacher_Windows_x86_64.zip) and [here for Linux](https://s3-us-west-1.amazonaws.com/udacity-drlnd/P2/Reacher/Reacher_Linux.zip) for Linux. 
+The version that contains 20 double joint arms in one Unity environment. These arms shall be moved to keep touching a ball. 
 
-The environment is considered solvend 
-Solve the Second Version
-The barrier for solving the second version of the environment is slightly different, to take into account the presence of many agents. In particular, your agents must get an average score of +30 (over 100 consecutive episodes, and over all agents). Specifically,
+## State and action space look like this
+The Action space contains 
+Number of agents: 20
+Size of each action: 4
+There are 20 agents. Each observes a state with length: 33
+The state for the first agent looks like: [ 0.00000000e+00 -4.00000000e+00  0.00000000e+00  1.00000000e+00
+ -0.00000000e+00 -0.00000000e+00 -4.37113883e-08  0.00000000e+00
+  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00
+  0.00000000e+00  0.00000000e+00 -1.00000000e+01  0.00000000e+00
+  1.00000000e+00 -0.00000000e+00 -0.00000000e+00 -4.37113883e-08
+  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00
+  0.00000000e+00  0.00000000e+00  5.75471878e+00 -1.00000000e+00
+  5.55726624e+00  0.00000000e+00  1.00000000e+00  0.00000000e+00
+ -1.68164849e-01]
 
-After each episode, we add up the rewards that each agent received (without discounting), to get a score for each agent. This yields 20 (potentially different) scores. We then take the average of these 20 scores.
-This yields an average score for each episode (where the average is over all 20 agents).
-
+## The environment is considered solvend 
+Solve the Version of the environment with multiple agents the agents must get an average score of +30 (over 100 consecutive episodes, and over all agents). 
+So the rewards of each agent are added and the average is taken over all agents after each episode.  
 
 # Setting up the environment
 For Jupiter workspace: 
