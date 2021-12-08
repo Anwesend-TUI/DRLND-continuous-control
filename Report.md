@@ -6,7 +6,7 @@ The introduction of batch-normalization for the first layer of the actor as well
 In my opinion the task should not be that complex for the ddn model, so I chose smaller sized networks with 256 hidden units in the first layer and 128 in the second. This was successful, but did not result in faster training time to the extent I had expected. Trying to make the Critic network smaller than the actor once lead to a worse performance, but with another setup seemed not to have to much of an impact. 
 
 ## Parameters
-BUFFER_SIZE = int(1e6)  # replay buffer size  
+```BUFFER_SIZE = int(1e6)  # replay buffer size  
 BATCH_SIZE = 256        # minibatch size  
 GAMMA = 0.99            # discount factor  
 TAU = 1e-3              # for soft update of target parameters  
@@ -17,6 +17,7 @@ UPDATE_INTERVAL = 20
 LEARN_PASSES=10  
 EPSILON=1  
 EPSILON_DECAY=1e-6   
+```
 
 The higher learning rate for the actor and the ciritic seemed not to affect the results much. Whereas a WEIGHT_DECAY higher than 0.00001 hat a verry negative effect on the training process.  
 The implementation of Epsilon decay to reduce the noise and therefor the probability that a random action is taken later in the training process seemd to be beneficial. 
