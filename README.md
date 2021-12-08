@@ -62,5 +62,5 @@ So the rewards of each agent are added and the average is taken over all agents 
 
 ## Plot of Rewards:
 The Plot showing an average reward over 16 can be found in Continuous_Control.ipynb .
-![Plot of the Results](/Training_results.png)
+![Plot of the Results](Training_results.png)
 
