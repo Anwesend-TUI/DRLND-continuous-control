@@ -53,5 +53,6 @@ The state for the first agent looks like: [ 0.00000000e+00 -4.00000000e+00  0.00
 Solve the Version of the environment with multiple agents the agents must get an average score of +30 (over 100 consecutive episodes, and over all agents). 
 So the rewards of each agent are added and the average is taken over all agents after each episode.  
 
-
+## How to run the code
+After setting up the jupyter kernel just execute the Continuous_Control.ipynb file. 
 
