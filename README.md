@@ -5,6 +5,35 @@ This Repository includes my solution to the Project Continuous control for Udaci
 The Projects consists of solving Unitys Reacher Environment which is included in this repository or can be found [here for Windows](https://s3-us-west-1.amazonaws.com/udacity-drlnd/P2/Reacher/Reacher_Windows_x86_64.zip) and [here for Linux](https://s3-us-west-1.amazonaws.com/udacity-drlnd/P2/Reacher/Reacher_Linux.zip) for Linux. 
 The version that contains 20 double joint arms in one Unity environment. These arms shall be moved to keep touching a ball. 
 
+## Setting up the environment
+For Jupiter workspace: 
+Follow the rules of https://github.com/kitu2007/drlnd-deep-reinforcement-learning. 
+The following small adjustments can be made in the process.
+
+1. As workspace is on a Ubuntu system (or VM)
+conda create --name drlnd python=3.6
+source activate drlnd
+
+2. classic control and box2d need not to be installed
+
+3. If it was not done before: 
+git clone https://github.com/udacity/deep-reinforcement-learning.git
+Then, or if the repository was already cloned: 
+cd deep-reinforcement-learning/python
+pip install .
+
+4. Create the Jupiter Kernel 
+python -m ipykernel install --user --name drlnd --display-name "drlnd"
+
+
+Full script: 
+
+conda create --name drlnd python=3.6  
+source activate drlnd  
+cd deep-reinforcement-learning/python  
+pip install .  
+python -m ipykernel install --user --name drlnd --display-name "drlnd"  
+
 ## State and action space look like this
 The Action space contains  
 Number of agents: 20  
@@ -24,34 +53,7 @@ The state for the first agent looks like: [ 0.00000000e+00 -4.00000000e+00  0.00
 Solve the Version of the environment with multiple agents the agents must get an average score of +30 (over 100 consecutive episodes, and over all agents). 
 So the rewards of each agent are added and the average is taken over all agents after each episode.  
 
-# Setting up the environment
-For Jupiter workspace: 
-Follow the rules of https://github.com/kitu2007/drlnd-deep-reinforcement-learning. 
-The following small adjustments can be made in the process.
 
-1. As workspace is on a Ubuntu system (or VM)
-conda create --name drlnd python=3.6
-source activate drlnd
-
-2. classic control and box2d need not to be installed
-
-3. If it was not done before: 
-git clone https://github.com/udacity/deep-reinforcement-learning.git
-Then: 
-cd deep-reinforcement-learning/python
-pip install .
-
-4. 
-python -m ipykernel install --user --name drlnd --display-name "drlnd"
-
-
-full script: 
-
-conda create --name drlnd python=3.6
-source activate drlnd
-cd deep-reinforcement-learning/python
-pip install .
-python -m ipykernel install --user --name drlnd --display-name "drlnd"
 
 
 # Deep Deterministic Policy Gradient (DDPG)
@@ -59,6 +61,6 @@ python -m ipykernel install --user --name drlnd --display-name "drlnd"
 # Parameters
 
 ## Plot of Rewards:
-The Plot showing an average reward over 16 can be found in Navigation.ipynb .
-![Plot also here](/rewards_plot.png)
+The Plot showing an average reward over 16 can be found in Continuous_Control.ipynb .
+![Plot of the Results](/Training_results.png)
 
