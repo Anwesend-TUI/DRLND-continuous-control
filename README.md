@@ -27,13 +27,12 @@ pip install .
 python -m ipykernel install --user --name drlnd --display-name "drlnd"
 
 
-Full script: 
-
-conda create --name drlnd python=3.6  
+Full script:  
+`conda create --name drlnd python=3.6  
 source activate drlnd  
 cd deep-reinforcement-learning/python  
 pip install .  
-python -m ipykernel install --user --name drlnd --display-name "drlnd"  
+python -m ipykernel install --user --name drlnd --display-name "drlnd"`
 
 ## State and action space look like this
 The Action space contains  
@@ -55,5 +54,5 @@ Solve the Version of the environment with multiple agents the agents must get an
 So the rewards of each agent are added and the average is taken over all agents after each episode.  
 
 ## How to run the code
-After setting up the jupyter kernel just execute the Continuous_Control.ipynb file. 
+After setting up the jupyter kernel just execute the `Continuous_Control.ipynb` file. 
 
