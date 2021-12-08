@@ -32,7 +32,8 @@ Full script:
 source activate drlnd  
 cd deep-reinforcement-learning/python  
 pip install .  
-python -m ipykernel install --user --name drlnd --display-name "drlnd"```
+python -m ipykernel install --user --name drlnd --display-name "drlnd"
+```
 
 ## State and action space look like this
 The Action space contains  
