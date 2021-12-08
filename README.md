@@ -1,6 +1,6 @@
 # DRLND-deep-reinforcement-learning Project 2 Continuous Control
 This Repository includes my solution to the Project Continuous control for Udacity's Deep Reinforcement Learning Nanodegree.
-The following describes the project and how to set up the workspace. The results are described in more detail in 'Report.md'.
+The following describes the project and how to set up the workspace. The results are described in more detail in `Report.md`.
 
 # Environment and Statespace
 The Projects consists of solving Unitys Reacher Environment which is included in this repository or can be found [here for Windows](https://s3-us-west-1.amazonaws.com/udacity-drlnd/P2/Reacher/Reacher_Windows_x86_64.zip) and [here for Linux](https://s3-us-west-1.amazonaws.com/udacity-drlnd/P2/Reacher/Reacher_Linux.zip) for Linux. 
