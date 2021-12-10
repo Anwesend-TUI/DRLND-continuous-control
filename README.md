@@ -5,9 +5,9 @@ The following describes the project and how to set up the workspace. The results
 # Environment and Statespace
 The Projects consists of solving Unitys Reacher Environment which can be <b>downloaded</b>
 [here for Windows 64bit](https://s3-us-west-1.amazonaws.com/udacity-drlnd/P2/Reacher/Reacher_Windows_x86_64.zip),  
-[here for Windows 32bit](https://s3-us-west-1.amazonaws.com/udacity-drlnd/P3/Tennis/Tennis_Windows_x86.zip),
+[here for Windows 32bit](https://s3-us-west-1.amazonaws.com/udacity-drlnd/P2/Reacher/Reacher_Windows_x86.zip),
 [here for Linux](https://s3-us-west-1.amazonaws.com/udacity-drlnd/P2/Reacher/Reacher_Linux.zip),
-and [here for Mac OS](https://s3-us-west-1.amazonaws.com/udacity-drlnd/P3/Tennis/Tennis.app.zip).  
+and [here for Mac OS](https://s3-us-west-1.amazonaws.com/udacity-drlnd/P2/Reacher/Reacher.app.zip).  
 The Windows Version is also included in this Repository.  
 It is about the version that contains 20 double joint arms (agents) in one Unity environment. These arms shall be moved to keep touching a ball. 
 Alternatively both environments can be downloaded from the links at [this Udacity Website](https://classroom.udacity.com/nanodegrees/nd893/parts/abb587d8-60cc-4d3f-a628-8f0af120c94a/modules/d08bc8d7-fdfb-42a1-9fe4-62f5d8dcfff2/lessons/5da2debd-eae0-4a70-b21f-be1603870c27/concepts/dc754a0c-d5e1-4a04-98dc-b16bd1a93371).   
