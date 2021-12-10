@@ -4,7 +4,7 @@ The following describes the project and how to set up the workspace. The results
 
 # Environment and Statespace
 The Projects consists of solving Unitys Reacher Environment which can be <b>downloaded</b>
-[here for Windows 64bit](https://s3-us-west-1.amazonaws.com/udacity-drlnd/P2/Reacher/Reacher_Windows_x86_64.zip),  
+[here for Windows 64bit](https://s3-us-west-1.amazonaws.com/udacity-drlnd/P2/Reacher/Reacher_Windows_x86_64.zip), 
 [here for Windows 32bit](https://s3-us-west-1.amazonaws.com/udacity-drlnd/P2/Reacher/Reacher_Windows_x86.zip),
 [here for Linux](https://s3-us-west-1.amazonaws.com/udacity-drlnd/P2/Reacher/Reacher_Linux.zip),
 and [here for Mac OS](https://s3-us-west-1.amazonaws.com/udacity-drlnd/P2/Reacher/Reacher.app.zip).  
