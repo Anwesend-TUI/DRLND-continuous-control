@@ -2,6 +2,13 @@
 
 ## Deep Deterministic Policy Gradient (DDPG)
 I chose the DDPG algorithm and adapeted the version that solved the ddpg-pendulum environment successfully. 
+Deep Deterministic Policy Gradient (DDPG) was first described in [this paper](https://arxiv.org/abs/1509.02971). *The underlying idea was to circumvent the disadvantages of both policy-based and model based aproches.* 
+
+The authors claim DDPG to be "an actor-critic, model-free algorithm based on the deterministic policy gradient that can operate over continuous action spaces". 
+
+An other benefit of the algorithm is "that for many of the tasks the algorithm can learn policies end-to-end: directly from raw pixel inputs".
+
+
 The introduction of batch-normalization for the first layer of the actor as well as the critic network lead to a more steady training without increasing the training time to much. 
 In my opinion the task should not be that complex for the ddn model, so I chose smaller sized networks with 256 hidden units in the first layer and 128 in the second. This was successful, but did not result in faster training time to the extent I had expected. Trying to make the Critic network smaller than the actor once lead to a worse performance, but with another setup seemed not to have to much of an impact. 
 
