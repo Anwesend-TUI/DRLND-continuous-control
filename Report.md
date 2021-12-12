@@ -2,17 +2,11 @@
 
 ## Deep Deterministic Policy Gradient (DDPG)
 I chose the DDPG algorithm and adapeted the version that solved the ddpg-pendulum environment successfully. 
-Deep Deterministic Policy Gradient (DDPG) was first described by Lillicrap et al. in [this paper](https://arxiv.org/abs/1509.02971). *The underlying idea was to circumvent the disadvantages of both policy-based and model based aproches.* The authors claim DDPG to be "an actor-critic, model-free algorithm based on the deterministic policy gradient that can operate over continuous action spaces". This is achieved as follows:
-DDPG has a Critic Netword that estimates/approximates the value of Q^*(s,a) with learning an approximator to a^*(s).
-DDPG has a network, called the Critic that is used to estimate/approximate the value of Q^*(s,a) by learning an approximator for a^*(s).
+Deep Deterministic Policy Gradient (DDPG) was first described by Lillicrap et al. in [this paper](https://arxiv.org/abs/1509.02971). The underlying idea was to circumvent the disadvantages of both policy-based and model based aproches. The authors claim DDPG to be "an actor-critic, model-free algorithm based on the deterministic policy gradient that can operate over continuous action spaces". This is achieved as follows:
+DDPG has actor network to choose and execute its action and a critic network that estimates/approximates the value of the optimal action-value function Q^*(s,a) (similar to Q-learning). But unlike Q-learning, the critic does this for environments with continuous action spaces. Furthermore there is a target network for each actor and critic which is soft-updated after each learing interval. So DDPG can be thought of as being deep Q-learning for continuous action spaces.  
+DDPG uses a Replay buffer that saves the actions, steps and rewards and next states. This shall lead to a more stable behaviour of the training process. 
 
-approximator to Q^*(s,a) with learning an approximator to a^*(s), and it does so in a way which is specifically adapted for environments with continuous action spaces.
-
-
-
-An other benefit of the algorithm is "that for many of the tasks the algorithm can learn policies end-to-end: directly from raw pixel inputs".
-
-
+### Design of the networks
 The introduction of batch-normalization for the first layer of the actor as well as the critic network lead to a more steady training without increasing the training time to much. 
 In my opinion the task should not be that complex for the ddn model, so I chose smaller sized networks with 256 hidden units in the first layer and 128 in the second. This was successful, but did not result in faster training time to the extent I had expected. Trying to make the Critic network smaller than the actor once lead to a worse performance, but with another setup seemed not to have to much of an impact. 
 
